@@ -1,2 +1,2 @@
 # FrontEndUIDesigns
-Flexipay FrontEnd App Designs
+Flexipay FrontEnd UI Designs
