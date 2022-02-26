@@ -1,2 +1,2 @@
 # FrontEndUIDesigns
-Flexipay App UI Designs
+Frontend UI Designs for the FlexiPay App 
