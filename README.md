@@ -1,2 +1,2 @@
 # FrontEndUIDesigns
-Frontend User Interface Designs for the FlexiPay Mobile Banking Application.
+Frontend User Interface (UI) Designs for the FlexiPay Mobile Banking Application.
