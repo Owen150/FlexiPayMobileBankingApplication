@@ -1,5 +1,6 @@
 package com.example.uidesigns.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.uidesigns.R
@@ -11,5 +12,7 @@ class HomeActivityThree : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        val intent = Intent(this@HomeActivityThree, MobileNumber::class.java)
+        startActivity(intent)
     }
 }

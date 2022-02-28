@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UIDesigns">
         <activity
+            android:name=".activities.VerificationCode"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DocumentPhoto"
+            android:exported="false" />
+        <activity
+            android:name=".activities.JustOneStep"
+            android:exported="false" />
+        <activity
+            android:name=".activities.PersonalInfo"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MobileNumber"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.LoginActivity"
             android:exported="false" />
         <activity

@@ -7,5 +7,15 @@
     <string name="welcome_text_welcome_three">Shop Without a Wallet...</string>
     <string name="register_btn_text">REGISTER</string>
     <string name="login_text">Already have an account? Login</string>
+    <string name="mobile_number">Using the Mobile Number provided, we will text you a code to verify your account.</string>
+    <string name="enter_number">Enter Mobile Number</string>
+    <string name="tv_policy">By continuing you are agreeing to our Terms and Conditions as well as our Privacy Policy.</string>
+    <string name="continue_btn_text">CONTINUE</string>
+    <string name="personal_info">Please provide us with your personal information. Your name should appear just as it appears on your National ID, Passport.</string>
+    <string name="personal_info_create">CREATE YOUR ACCOUNT</string>
+    <string name="just_one_step">Provide us with the details we have requested below.</string>
+    <string name="document_photo">Provide us with Document Photo ID</string>
+
+
 
 </resources>
