@@ -15,6 +15,23 @@
     <string name="personal_info_create">CREATE YOUR ACCOUNT</string>
     <string name="just_one_step">Provide us with the details we have requested below.</string>
     <string name="document_photo">Provide us with Document Photo ID</string>
+    <string name="cf_surname">Surname</string>
+    <string name="cf_email">Enter Your Email Address</string>
+    <string name="cf_dob">What\'s Your D.O.O? (DD/MM/YY)</string>
+    <string name="cf_gender">Gender</string>
+    <string name="cf_phone">Enter Phone Number</string>
+    <string name="cf_alternative_phone">Alternative Mobile Number</string>
+    <string name="cf_referral">Referral Code</string>
+    <string name="cf_occupation">Select Occupation</string>
+    <string name="cf_enter_id">Enter ID</string>
+    <string name="given_name">Given Name</string>
+    <string name="cf_card_number">Card Number</string>
+    <string name="cf_verification_code">Enter the 4-digit code sent to you at</string>
+    <string name="cf_verified_number">+254 700 924 528</string>
+    <string name="cf_resend_code">Resend code in 00:13</string>
+
+
+
 
 
 

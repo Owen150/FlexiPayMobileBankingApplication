@@ -14,15 +14,15 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_mobile_number"
-        android:layout_width="match_parent"
-        android:layout_height="53dp"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginEnd="20dp"
         android:text="@string/mobile_number"
@@ -34,48 +34,35 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.17000002" />
 
-    <EditText
-        android:id="@+id/et_mobile_number"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginEnd="20dp"
-        android:autofillHints="true"
-        android:background="#001D4D"
-        android:hint="@string/enter_number"
-        android:inputType="phone"
-        android:padding="20dp"
-        android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number"
-        app:layout_constraintVertical_bias="0.100000024"/>
-
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtConfirmPassword"
+        android:id="@+id/txt_confirm_password"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_mobile_number">
+        app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number">
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etxtConfirmPassword"
+            android:id="@+id/tc_phone_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm Password"
-            android:textColorHint="@color/white"
             android:ems="10"
-            android:inputType="textPassword"
-            android:textSize="14sp"
-            android:textStyle="bold" />
+            android:textAlignment="center"
+            app:errorIconDrawable="@drawable/ic_error"
+            app:helperTextTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:hint="@string/cf_phone"
+            android:inputType="phone"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -83,27 +70,28 @@
         android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="132dp"
         android:text="@string/tv_policy"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_mobile_number"
-        app:layout_constraintEnd_toEndOf="@+id/iv_mobile_number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/iv_mobile_number"
-        app:layout_constraintTop_toBottomOf="@+id/et_mobile_number"
-        app:layout_constraintVertical_bias="0.665" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_confirm_password"
+        app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
         android:id="@+id/cb_one"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="144dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tv_privacy_policy"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/iv_mobile_number"
-        app:layout_constraintTop_toTopOf="@+id/iv_mobile_number"
-        app:layout_constraintVertical_bias="0.793"
+        app:layout_constraintRight_toLeftOf="@id/tv_privacy_policy"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
@@ -120,9 +108,10 @@
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_privacy_policy"
-        app:layout_constraintVertical_bias="0.32"
+        app:layout_constraintTop_toBottomOf="@+id/txt_confirm_password"
+        app:layout_constraintVertical_bias="0.9"
         tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
 
