@@ -9,8 +9,5 @@ class VerificationCode : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_verification_code)
-
-        val intent = Intent(this@VerificationCode, LoginActivity::class.java)
-        startActivity(intent)
     }
 }

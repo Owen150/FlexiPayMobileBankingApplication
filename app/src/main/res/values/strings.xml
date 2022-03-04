@@ -13,8 +13,8 @@
     <string name="continue_btn_text">CONTINUE</string>
     <string name="personal_info">Please provide us with your personal information. Your name should appear just as it appears on your National ID, Passport.</string>
     <string name="personal_info_create">CREATE YOUR ACCOUNT</string>
-    <string name="just_one_step">Provide us with the details we have requested below.</string>
-    <string name="document_photo">Provide us with Document Photo ID</string>
+    <string name="just_one_step">Provide us with the details we have requested below</string>
+    <string name="document_photo">Provide us with Document Photo ID.</string>
     <string name="cf_surname">Surname</string>
     <string name="cf_email">Enter Your Email Address</string>
     <string name="cf_dob">What\'s Your D.O.O? (DD/MM/YY)</string>
@@ -29,6 +29,7 @@
     <string name="cf_verification_code">Enter the 4-digit code sent to you at</string>
     <string name="cf_verified_number">+254 700 924 528</string>
     <string name="cf_resend_code">Resend code in 00:13</string>
+    <string name="cf_id_type">ID Type</string>
 
 
 
