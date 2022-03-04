@@ -2,8 +2,8 @@
     <string name="app_name">FlexiPay UI Designs</string>
     <string name="home_activity">Home Activity</string>
     <string name="welcome_text">Welcome to FlexiPay</string>
-    <string name="welcome_text_welcome_one">A Fast and Efficient Service to Go Cashless!</string>
-    <string name="welcome_text_welcome_two">A Fast and Efficient Service to Go Cashless!</string>
+    <string name="welcome_text_welcome_one">A Fast &amp; Efficient Service to Go Cashless!</string>
+    <string name="welcome_text_welcome_two">A Fast &amp; Efficient Service to Go Cashless!</string>
     <string name="welcome_text_welcome_three">Shop Without a Wallet...</string>
     <string name="register_btn_text">REGISTER</string>
     <string name="login_text">Already have an account? Login</string>

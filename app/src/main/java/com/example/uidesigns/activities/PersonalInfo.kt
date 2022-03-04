@@ -3,6 +3,7 @@ package com.example.uidesigns.activities
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import com.example.uidesigns.R
 
 class PersonalInfo : AppCompatActivity() {

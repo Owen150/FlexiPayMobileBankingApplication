@@ -146,7 +146,6 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_select_occupation"
         tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
-
     <Button
         android:id="@+id/btn_register_one"
         android:layout_width="match_parent"
