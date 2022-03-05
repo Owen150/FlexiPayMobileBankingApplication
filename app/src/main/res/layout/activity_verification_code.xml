@@ -76,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
         android:layout_marginEnd="75dp"
-        android:elevation="5sp"
+        android:backgroundTint="@color/accent"
         android:fontFamily="@font/myfont"
         android:text="@string/continue_btn_text"
         android:textAlignment="center"
