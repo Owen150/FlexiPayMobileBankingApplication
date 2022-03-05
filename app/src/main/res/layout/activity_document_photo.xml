@@ -35,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/cf_id_type"
+            android:textColorHint="@color/white"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -50,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/cf_enter_id"
+            android:textColorHint="@color/white"
             android:layout_marginTop="17dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -66,6 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/cf_card_number"
+            android:textColorHint="@color/white"
             android:layout_marginTop="17dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 

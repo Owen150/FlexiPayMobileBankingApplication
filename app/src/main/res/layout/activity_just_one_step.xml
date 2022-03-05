@@ -35,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/cf_alternative_phone"
+            android:textColorHint="@color/white"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -50,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/cf_referral"
+            android:textColorHint="@color/white"
             android:layout_marginTop="17dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -66,6 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/cf_occupation"
+            android:textColorHint="@color/white"
             android:layout_marginTop="17dp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -76,7 +79,6 @@
                 android:inputType="text"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
-
 
         <Button
             android:id="@+id/btn_register_one"
