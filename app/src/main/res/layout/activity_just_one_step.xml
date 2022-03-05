@@ -80,7 +80,7 @@
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_register_one"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

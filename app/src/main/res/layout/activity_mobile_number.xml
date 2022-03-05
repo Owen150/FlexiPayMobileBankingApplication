@@ -91,7 +91,7 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_register_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
