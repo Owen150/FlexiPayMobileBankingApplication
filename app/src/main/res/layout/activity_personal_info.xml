@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/cf_surname"
             android:textColorHint="@color/white"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            style="@style/TextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -53,14 +53,14 @@
             android:hint="@string/given_name"
             android:textColorHint="@color/white"
             android:layout_marginTop="17dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            style="@style/TextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/myfont"
                 android:inputType="text"
-                android:textSize="18sp" />
+                android:textSize="17sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -70,14 +70,14 @@
             android:hint="@string/cf_dob"
             android:textColorHint="@color/white"
             android:layout_marginTop="17dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            style="@style/TextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/myfont"
                 android:inputType="date"
-                android:textSize="18sp" />
+                android:textSize="17sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -87,7 +87,7 @@
             android:hint="@string/cf_gender"
             android:textColorHint="@color/white"
             android:layout_marginTop="17dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            style="@style/TextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -104,7 +104,7 @@
             android:hint="@string/cf_email"
             android:textColorHint="@color/white"
             android:layout_marginTop="17dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            style="@style/TextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"

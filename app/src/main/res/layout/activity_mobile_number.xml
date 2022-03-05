@@ -39,7 +39,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txt_confirm_password"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/TextInputLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
