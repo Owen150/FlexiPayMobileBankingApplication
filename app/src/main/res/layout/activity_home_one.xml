@@ -71,7 +71,7 @@
         android:textColor="@color/white"
         android:textSize="23sp"
         app:cornerRadius="25dp"
-        android:backgroundTint="@color/accent"
+        app:backgroundTint="@color/accent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
