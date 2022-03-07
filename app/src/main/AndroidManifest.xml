@@ -10,41 +10,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UIDesigns">
         <activity
-            android:name=".activities.VerificationCode"
+            android:name=".uidesigns.VerificationCode"
             android:exported="false" />
         <activity
-            android:name=".activities.DocumentPhoto"
+            android:name=".uidesigns.DocumentPhoto"
             android:exported="false" />
         <activity
-            android:name=".activities.JustOneStep"
+            android:name=".uidesigns.JustOneStep"
             android:exported="false" />
         <activity
-            android:name=".activities.PersonalInfo"
+            android:name=".uidesigns.PersonalInfo"
             android:exported="false" />
         <activity
-            android:name=".activities.MobileNumber"
+            android:name=".uidesigns.MobileNumber"
             android:exported="false" />
         <activity
-            android:name=".activities.SignUpActivity"
+            android:name=".uidesigns.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.LoginActivity"
+            android:name=".uidesigns.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.HomeActivityThree"
+            android:name=".uidesigns.HomeActivityThree"
             android:exported="false" />
         <activity
-            android:name=".activities.HomeActivityTwo"
+            android:name=".uidesigns.HomeActivityTwo"
             android:exported="false" />
         <activity
-            android:name=".activities.HomeActivityOne"
+            android:name=".uidesigns.HomeActivityOne"
             android:exported="false" />
         <activity
-            android:name=".activities.HomeActivity"
+            android:name=".uidesigns.HomeActivity"
             android:exported="false"
             android:label="@string/home_activity" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".uidesigns.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
