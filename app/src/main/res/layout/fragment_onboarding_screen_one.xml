@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splashscreens.SplashScreenThreeFragment">
+    tools:context=".onboarding.OnboardingScreenOneFragment">
 
     <ImageView
-        android:id="@+id/image_view_three"
+        android:id="@+id/image_view_one"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
@@ -15,21 +15,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/splash_screen_three"/>
+        app:srcCompat="@drawable/splash_screen_one" />
 
     <ImageView
-        android:id="@+id/img_logo_3"
+        android:id="@+id/img_logo"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
         android:src="@drawable/flexipay_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.110000014" />
+        app:layout_constraintVertical_bias="0.050000012" />
 
     <TextView
-        android:id="@+id/tv_welcome_three"
+        android:id="@+id/tv_welcome_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/welcome_text"
@@ -40,26 +42,26 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/img_logo_3"
+        app:layout_constraintTop_toBottomOf="@id/img_logo"
         app:layout_constraintVertical_bias="0.43" />
 
     <TextView
-        android:id="@+id/tv_welcome_text_three"
+        android:id="@+id/tv_welcome_text_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/welcome_text_welcome_one"
         android:fontFamily="@font/myfont"
-        android:text="@string/welcome_text_welcome_three"
-        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="28sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_welcome_three"
-        app:layout_constraintVertical_bias="0.04000002" />
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome_one"
+        app:layout_constraintVertical_bias="0.041" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_register_three"
+        android:id="@+id/btn_register_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
@@ -73,23 +75,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_welcome_text_three"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome_text_one"
         app:layout_constraintVertical_bias="0.52"
         tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
     <TextView
-        android:id="@+id/tv_login_two"
+        android:id="@+id/tv_login_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login_text"
         android:fontFamily="@font/myfont"
+        android:text="@string/login_text"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="22sp"
-        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register_three"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register_one"
         app:layout_constraintVertical_bias="0.31" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

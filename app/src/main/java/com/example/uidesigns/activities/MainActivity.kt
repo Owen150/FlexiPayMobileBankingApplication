@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.example.uidesigns.R
+import com.example.uidesigns.onboarding.OnboardingScreenOneFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +16,10 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         //Set the Duration for the splash screen
         Handler().postDelayed({
-            val intent = Intent(this@MainActivity, HomeActivityOne::class.java)
+            val intent = Intent(this@MainActivity, OnboardingScreenOneFragment::class.java)
             startActivity(intent)
             //To disable navigation back to the splashscreen
             finish()
-        },5000)
+        },4000)
     }
 }

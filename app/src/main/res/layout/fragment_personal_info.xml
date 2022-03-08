@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.PersonalInfoFragment"
+    tools:context=".auth.register.PersonalInfoFragment"
     android:background="#001D4D"
     android:scaleType="fitXY"
     android:orientation="vertical"
