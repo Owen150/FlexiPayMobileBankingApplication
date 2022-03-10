@@ -31,7 +31,7 @@ class ViewPagerFragment : Fragment() {
             lifecycle
         )
 
-        view.viewPager.adapter = adapter
+        //view.viewPager.adapter = adapter
         return view
     }
 }

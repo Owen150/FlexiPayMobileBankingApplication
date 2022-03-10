@@ -9,42 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UIDesigns">
+<!--        <activity-->
+<!--            android:name=".uidesigns.VerificationCode"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".uidesigns.DocumentPhoto"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".uidesigns.JustOneStep"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".uidesigns.PersonalInfo"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".uidesigns.MobileNumber"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".uidesigns.SignUpActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".uidesigns.LoginActivity"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".uidesigns.HomeActivityThree"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".uidesigns.HomeActivityTwo"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".uidesigns.HomeActivityOne"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".uidesigns.HomeActivity"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/home_activity" />-->
         <activity
-            android:name=".uidesigns.VerificationCode"
-            android:exported="false" />
-        <activity
-            android:name=".uidesigns.DocumentPhoto"
-            android:exported="false" />
-        <activity
-            android:name=".uidesigns.JustOneStep"
-            android:exported="false" />
-        <activity
-            android:name=".uidesigns.PersonalInfo"
-            android:exported="false" />
-        <activity
-            android:name=".uidesigns.MobileNumber"
-            android:exported="false" />
-        <activity
-            android:name=".uidesigns.SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".uidesigns.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".uidesigns.HomeActivityThree"
-            android:exported="false" />
-        <activity
-            android:name=".uidesigns.HomeActivityTwo"
-            android:exported="false" />
-        <activity
-            android:name=".uidesigns.HomeActivityOne"
-            android:exported="false" />
-        <activity
-            android:name=".uidesigns.HomeActivity"
-            android:exported="false"
-            android:label="@string/home_activity" />
-        <activity
-            android:name=".uidesigns.activities.MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

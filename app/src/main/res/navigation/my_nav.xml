@@ -6,8 +6,80 @@
     app:startDestination="@id/splashFragment">
 
     <fragment
+        android:id="@+id/onboardingScreenOneFragment"
+        android:name="com.example.uidesigns.onboarding.OnboardingScreenOneFragment"
+        android:label="fragment_onboarding_screen_one"
+        tools:layout="@layout/fragment_onboarding_screen_one" >
+        <action
+            android:id="@+id/action_onboardingScreenOneFragment_to_onboardingScreenTwoFragment"
+            app:destination="@id/onboardingScreenTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingScreenTwoFragment"
+        android:name="com.example.uidesigns.onboarding.OnboardingScreenTwoFragment"
+        android:label="fragment_onboarding_screen_two"
+        tools:layout="@layout/fragment_onboarding_screen_two" >
+        <action
+            android:id="@+id/action_onboardingScreenTwoFragment_to_onboardingScreenThreeFragment"
+            app:destination="@id/onboardingScreenThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingScreenThreeFragment"
+        android:name="com.example.uidesigns.onboarding.OnboardingScreenThreeFragment"
+        android:label="fragment_onboarding_screen_three"
+        tools:layout="@layout/fragment_onboarding_screen_three" >
+        <action
+            android:id="@+id/action_onboardingScreenThreeFragment_to_mobileNumberFragment"
+            app:destination="@id/mobileNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mobileNumberFragment"
+        android:name="com.example.uidesigns.auth.register.MobileNumberFragment"
+        android:label="fragment_mobile_number"
+        tools:layout="@layout/fragment_mobile_number" >
+        <action
+            android:id="@+id/action_mobileNumberFragment_to_personalInfoFragment"
+            app:destination="@id/personalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInfoFragment"
+        android:name="com.example.uidesigns.auth.register.PersonalInfoFragment"
+        android:label="fragment_personal_info"
+        tools:layout="@layout/fragment_personal_info" >
+        <action
+            android:id="@+id/action_personalInfoFragment_to_additionalDetailsFragment"
+            app:destination="@id/additionalDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/additionalDetailsFragment"
+        android:name="com.example.uidesigns.auth.register.AdditionalDetailsFragment"
+        android:label="fragment_additional_details"
+        tools:layout="@layout/fragment_additional_details" >
+        <action
+            android:id="@+id/action_additionalDetailsFragment_to_documentPhotoFragment"
+            app:destination="@id/documentPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/documentPhotoFragment"
+        android:name="com.example.uidesigns.auth.register.DocumentPhotoFragment"
+        android:label="fragment_document_photo"
+        tools:layout="@layout/fragment_document_photo" >
+        <action
+            android:id="@+id/action_documentPhotoFragment_to_verificationCodeFragment"
+            app:destination="@id/verificationCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationCodeFragment"
+        android:name="com.example.uidesigns.auth.register.VerificationCodeFragment"
+        android:label="fragment_verification_code"
+        tools:layout="@layout/fragment_verification_code" />
+    <fragment
         android:id="@+id/splashFragment"
         android:name="com.example.uidesigns.splashscreens.SplashFragment"
         android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" />
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingScreenOneFragment"
+            app:destination="@id/onboardingScreenOneFragment" />
+    </fragment>
 </navigation>

@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.findNavController
 import com.example.uidesigns.R
 
 class AdditionalDetailsFragment : Fragment() {
@@ -18,5 +20,11 @@ class AdditionalDetailsFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_additional_details, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        view.findViewById<Button>(R.id.btn_register_one).setOnClickListener {
+            view.findNavController().navigate(R.id.action_additionalDetailsFragment_to_documentPhotoFragment)
+        }
     }
 }
