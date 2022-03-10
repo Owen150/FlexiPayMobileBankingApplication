@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/drawable/gradient.xml" value="0.128" />
+        <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/drawable/ic_error.xml" value="0.128" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1265" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/HomeActivityTwo.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/activity_document_photo.xml" value="0.21" />
@@ -23,7 +25,7 @@
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_flexipay_dashboard.xml" value="0.16077898550724637" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_mobile_number.xml" value="0.2" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_mobile_number_sign_in.xml" value="0.16077898550724637" />
-        <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_onboarding_screen_one.xml" value="0.16077898550724637" />
+        <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_onboarding_screen_one.xml" value="0.2" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_onboarding_screen_three.xml" value="0.16077898550724637" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_onboarding_screen_two.xml" value="0.16077898550724637" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_personal_info.xml" value="0.16077898550724637" />

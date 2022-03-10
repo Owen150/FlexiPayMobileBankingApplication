@@ -8,8 +8,13 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
 import com.example.uidesigns.R
+import com.example.uidesigns.databinding.FragmentOnboardingScreenOneBinding
+import com.example.uidesigns.databinding.FragmentOnboardingScreenTwoBinding
 
 class OnboardingScreenTwoFragment : Fragment() {
+    private var _binding: FragmentOnboardingScreenTwoBinding? = null
+    // This property is only valid between onCreateView and onDestroyView.
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,12 +25,18 @@ class OnboardingScreenTwoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_onboarding_screen_two, container, false)
+        _binding = FragmentOnboardingScreenTwoBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        view.findViewById<Button>(R.id.btn_register_two).setOnClickListener {
+        binding.btnRegisterTwo.setOnClickListener {
             view.findNavController().navigate(R.id.action_onboardingScreenTwoFragment_to_onboardingScreenThreeFragment)
         }
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

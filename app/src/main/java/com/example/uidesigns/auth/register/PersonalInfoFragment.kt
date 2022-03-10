@@ -8,8 +8,13 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
 import com.example.uidesigns.R
+import com.example.uidesigns.databinding.FragmentMobileNumberBinding
+import com.example.uidesigns.databinding.FragmentPersonalInfoBinding
 
 class PersonalInfoFragment : Fragment() {
+    private var _binding: FragmentPersonalInfoBinding? = null
+    // This property is only valid between onCreateView and onDestroyView.
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,12 +26,19 @@ class PersonalInfoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_personal_info, container, false)
+        _binding = FragmentPersonalInfoBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        view.findViewById<Button>(R.id.btn_register_one).setOnClickListener {
+        binding.btnRegisterOne.setOnClickListener {
             view.findNavController().navigate(R.id.action_personalInfoFragment_to_additionalDetailsFragment)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

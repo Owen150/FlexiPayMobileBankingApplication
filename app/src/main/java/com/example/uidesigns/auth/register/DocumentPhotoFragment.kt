@@ -8,8 +8,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
 import com.example.uidesigns.R
+import com.example.uidesigns.databinding.FragmentAdditionalDetailsBinding
+import com.example.uidesigns.databinding.FragmentDocumentPhotoBinding
 
 class DocumentPhotoFragment : Fragment() {
+    private var _binding: FragmentDocumentPhotoBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,12 +24,19 @@ class DocumentPhotoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_document_photo, container, false)
+        _binding = FragmentDocumentPhotoBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        view.findViewById<Button>(R.id.btn_register_one).setOnClickListener {
+        binding.btnRegisterOne.setOnClickListener {
             view.findNavController().navigate(R.id.action_documentPhotoFragment_to_verificationCodeFragment)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

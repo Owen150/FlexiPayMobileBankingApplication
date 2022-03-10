@@ -1,4 +1,5 @@
 <resources>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
     <string name="app_name">FlexiPay UI Designs</string>
     <string name="home_activity">Home Activity</string>
     <string name="welcome_text">Welcome to FlexiPay</string>
@@ -30,6 +31,10 @@
     <string name="cf_verified_number">+254 700 924 528</string>
     <string name="cf_resend_code">Resend code in 00:13</string>
     <string name="cf_id_type">ID Type</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cf_pin">To Create a New Pin for your Flexipay Wallet Enter Code sent to your Mobile Number</string>
+    <string name="cf_code">Enter Code</string>
+    <string name="cf_new_pin">New Pin</string>
+    <string name="cf_confirm_pin">Confirm Pin</string>
+
+
 </resources>

@@ -8,8 +8,13 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
 import com.example.uidesigns.R
+import com.example.uidesigns.databinding.FragmentAdditionalDetailsBinding
+import com.example.uidesigns.databinding.FragmentMobileNumberBinding
 
 class AdditionalDetailsFragment : Fragment() {
+    private var _binding: FragmentAdditionalDetailsBinding? = null
+    private val binding get() = _binding!!
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -19,12 +24,19 @@ class AdditionalDetailsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_additional_details, container, false)
+        _binding = FragmentAdditionalDetailsBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        view.findViewById<Button>(R.id.btn_register_one).setOnClickListener {
+        binding.btnRegisterOne.setOnClickListener {
             view.findNavController().navigate(R.id.action_additionalDetailsFragment_to_documentPhotoFragment)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

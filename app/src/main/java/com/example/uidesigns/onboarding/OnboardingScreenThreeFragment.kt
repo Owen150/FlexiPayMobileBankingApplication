@@ -8,9 +8,15 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.findNavController
 import com.example.uidesigns.R
+import com.example.uidesigns.databinding.FragmentOnboardingScreenThreeBinding
+import com.example.uidesigns.databinding.FragmentOnboardingScreenTwoBinding
 
 
 class OnboardingScreenThreeFragment : Fragment() {
+    private var _binding: FragmentOnboardingScreenThreeBinding? = null
+    // This property is only valid between onCreateView and onDestroyView.
+    private val binding get() = _binding!!
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -21,11 +27,19 @@ class OnboardingScreenThreeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_onboarding_screen_three, container, false)
+        _binding = FragmentOnboardingScreenThreeBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        view.findViewById<Button>(R.id.btn_register_three).setOnClickListener {
+        binding.btnRegisterThree.setOnClickListener {
             view.findNavController().navigate(R.id.action_onboardingScreenThreeFragment_to_mobileNumberFragment)
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

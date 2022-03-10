@@ -72,7 +72,11 @@
         android:id="@+id/verificationCodeFragment"
         android:name="com.example.uidesigns.auth.register.VerificationCodeFragment"
         android:label="fragment_verification_code"
-        tools:layout="@layout/fragment_verification_code" />
+        tools:layout="@layout/fragment_verification_code" >
+        <action
+            android:id="@+id/action_verificationCodeFragment_to_enterPinFragment"
+            app:destination="@id/enterPinFragment" />
+    </fragment>
     <fragment
         android:id="@+id/splashFragment"
         android:name="com.example.uidesigns.splashscreens.SplashFragment"
@@ -82,4 +86,9 @@
             android:id="@+id/action_splashFragment_to_onboardingScreenOneFragment"
             app:destination="@id/onboardingScreenOneFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/enterPinFragment"
+        android:name="com.example.uidesigns.auth.register.EnterPinFragment"
+        android:label="fragment_enter_pin"
+        tools:layout="@layout/fragment_enter_pin" />
 </navigation>
