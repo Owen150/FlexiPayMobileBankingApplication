@@ -22,18 +22,11 @@ class SplashFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_splash, container, false)
-
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        //Remove the action bar so that we can scale our image in full height
-//        supportActionBar?.hide()
         //Set the Duration for the splash screen
-        lifecycleScope.launchWhenCreated {
-            delay(3000L)
-            findNavController().navigate(R.id.action_splashFragment_to_onboardingScreenOneFragment)
-        }
+        Handler().postDelayed({
+            findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
+        },3000)
+        //Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_splash, container, false)
     }
 }

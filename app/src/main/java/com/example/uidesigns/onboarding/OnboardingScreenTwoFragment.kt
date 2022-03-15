@@ -11,7 +11,7 @@ import com.example.uidesigns.R
 import com.example.uidesigns.databinding.FragmentOnboardingScreenOneBinding
 import com.example.uidesigns.databinding.FragmentOnboardingScreenTwoBinding
 
-class OnboardingScreenTwoFragment : Fragment() {
+class OnboardingScreenTwoFragment(val onclick : () -> Unit) : Fragment() {
     private var _binding: FragmentOnboardingScreenTwoBinding? = null
     // This property is only valid between onCreateView and onDestroyView.
     private val binding get() = _binding!!
@@ -32,7 +32,7 @@ class OnboardingScreenTwoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.btnRegisterTwo.setOnClickListener {
-            view.findNavController().navigate(R.id.action_onboardingScreenTwoFragment_to_onboardingScreenThreeFragment)
+            onclick.invoke()
         }
     }
     override fun onDestroyView() {

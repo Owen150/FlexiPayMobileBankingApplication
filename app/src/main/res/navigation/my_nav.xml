@@ -11,8 +11,8 @@
         android:label="fragment_onboarding_screen_one"
         tools:layout="@layout/fragment_onboarding_screen_one" >
         <action
-            android:id="@+id/action_onboardingScreenOneFragment_to_onboardingScreenTwoFragment"
-            app:destination="@id/onboardingScreenTwoFragment" />
+            android:id="@+id/action_onboardingScreenOneFragment_to_mobileNumberFragment"
+            app:destination="@id/mobileNumberFragment" />
     </fragment>
     <fragment
         android:id="@+id/onboardingScreenTwoFragment"
@@ -20,8 +20,8 @@
         android:label="fragment_onboarding_screen_two"
         tools:layout="@layout/fragment_onboarding_screen_two" >
         <action
-            android:id="@+id/action_onboardingScreenTwoFragment_to_onboardingScreenThreeFragment"
-            app:destination="@id/onboardingScreenThreeFragment" />
+            android:id="@+id/action_onboardingScreenTwoFragment_to_mobileNumberFragment"
+            app:destination="@id/mobileNumberFragment" />
     </fragment>
     <fragment
         android:id="@+id/onboardingScreenThreeFragment"
@@ -83,12 +83,21 @@
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
-            android:id="@+id/action_splashFragment_to_onboardingScreenOneFragment"
-            app:destination="@id/onboardingScreenOneFragment" />
+            android:id="@+id/action_splashFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
     </fragment>
     <fragment
         android:id="@+id/enterPinFragment"
         android:name="com.example.uidesigns.auth.register.EnterPinFragment"
         android:label="fragment_enter_pin"
         tools:layout="@layout/fragment_enter_pin" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.uidesigns.onboarding.viewpager.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_mobileNumberFragment"
+            app:destination="@id/mobileNumberFragment" />
+    </fragment>
 </navigation>

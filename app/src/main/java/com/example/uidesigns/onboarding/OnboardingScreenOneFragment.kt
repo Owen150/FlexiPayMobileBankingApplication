@@ -11,7 +11,7 @@ import androidx.navigation.findNavController
 import com.example.uidesigns.R
 import com.example.uidesigns.databinding.FragmentOnboardingScreenOneBinding
 
-class OnboardingScreenOneFragment : Fragment() {
+class OnboardingScreenOneFragment(val onclick : () -> Unit) : Fragment() {
 
     private var _binding: FragmentOnboardingScreenOneBinding? = null
     // This property is only valid between onCreateView and onDestroyView.
@@ -33,7 +33,7 @@ class OnboardingScreenOneFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.btnRegisterOne.setOnClickListener{
-            view.findNavController().navigate(R.id.action_onboardingScreenOneFragment_to_onboardingScreenTwoFragment)
+            onclick.invoke()
         }
     }
 
