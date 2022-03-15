@@ -20,12 +20,14 @@
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/activity_sign_up.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/activity_verification_code.xml" value="0.21" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_additional_details.xml" value="0.2" />
+        <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_dashboard_gamification.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_document_photo.xml" value="0.16077898550724637" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_enter_pin.xml" value="0.16077898550724637" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_flexipay_dashboard.xml" value="0.16077898550724637" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_hidden_amount.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_mobile_number.xml" value="0.2" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_mobile_number_sign_in.xml" value="0.16077898550724637" />
+        <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_on_scroll.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_onboarding_screen_one.xml" value="0.2" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_onboarding_screen_three.xml" value="0.16077898550724637" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_onboarding_screen_two.xml" value="0.16077898550724637" />
@@ -37,6 +39,7 @@
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_splash_screen_two.xml" value="0.16077898550724637" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_verification_code.xml" value="0.2" />
         <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/layout/fragment_view_pager.xml" value="0.16077898550724637" />
+        <entry key="..\:/Users/Tyap6/Desktop/UIDesigns/app/src/main/res/menu/btm_nav.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>
