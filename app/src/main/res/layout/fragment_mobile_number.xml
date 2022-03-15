@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".auth.register.MobileNumberFragment">
 
+
     <ImageView
         android:id="@+id/iv_mobile_number"
         android:layout_width="match_parent"
@@ -17,7 +18,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/tv_mobile_number"
@@ -36,20 +38,38 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.17000002" />
 
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:padding="16dp"
+            app:ccp_countryPreference="KE,TZ,UG,IN,US,NZ"
+            app:ccp_defaultCode="254"
+            app:ccp_defaultNameCode="KE"
+            app:ccp_textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/txt_confirm_password"
+            app:layout_constraintTop_toBottomOf="@id/tv_mobile_number"
+            app:layout_constraintVertical_bias="0.004" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txt_confirm_password"
         style="@style/TextInputLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
+        android:layout_marginStart="190dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="30dp"
         android:hint="@string/cf_phone"
         android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number">
+        app:layout_constraintTop_toBottomOf="@+id/tv_mobile_number"
+        app:layout_constraintVertical_bias="0.0">
 
 
         <com.google.android.material.textfield.TextInputEditText
@@ -57,8 +77,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/myfont"
+            android:textColor="@color/white"
             android:inputType="phone"
-            android:textSize="17sp"/>
+            android:textSize="17sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
