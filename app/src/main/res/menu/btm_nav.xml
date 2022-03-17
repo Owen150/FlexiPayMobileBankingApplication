@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:title="WALLET"
-        android:icon="@drawable/ic_home"
         android:id="@+id/walletFragment"/>
 
     <item android:title="PAY BILLS"
-        android:icon="@drawable/ic_favorite"
         android:id="@+id/billsFragment"/>
 
     <item android:title="SCAN &amp; PAY"
-        android:icon="@drawable/ic_categories"
         android:id="@+id/payFragment"/>
 
     <item android:title="OFFERS"
-        android:icon="@drawable/ic_categories"
         android:id="@+id/offersFragment"/>
 
     <item android:title="MORE"
-        android:icon="@drawable/ic_categories"
         android:id="@+id/moreFragment"/>
 </menu>

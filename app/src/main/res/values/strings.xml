@@ -35,6 +35,14 @@
     <string name="cf_code">Enter Code</string>
     <string name="cf_new_pin">New Pin</string>
     <string name="cf_confirm_pin">Confirm Pin</string>
+    <string name="fp_wallet">Flexipay Wallet Account</string>
+    <string name="bal">Hide balance</string>
+    <string name="rd_points">Redeem points</string>
+    <string name="iv_friend">Invite a friend</string>
+    <string name="snd_mny">Send Money, Make Payments</string>
+    <string name="buy_airtime">Buy Airtime</string>
+    <string name="take_id_front">Take ID Front</string>
+    <string name="takeid_back">TakeID Back</string>
 
 
 </resources>
