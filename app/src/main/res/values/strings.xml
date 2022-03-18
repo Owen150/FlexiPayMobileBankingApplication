@@ -43,6 +43,7 @@
     <string name="buy_airtime">Buy Airtime</string>
     <string name="take_id_front">Take ID Front</string>
     <string name="takeid_back">TakeID Back</string>
+    <string name="mini_statement">Ministatement</string>
 
 
 </resources>

@@ -91,8 +91,8 @@
             android:textColor="@color/white"
             android:fontFamily="@font/myfont"
             android:textSize="23sp"
-            app:cornerRadius="25dp"
-            app:backgroundTint="@color/accent"
+            app:backgroundTint="@null"
+            android:background="@drawable/gradient"
             app:layout_constraintVertical_bias="0.52"
             tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
