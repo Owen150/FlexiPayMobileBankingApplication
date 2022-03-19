@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="accent">#FF671F</color>
     <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
+    <color name="color_header">#001D4D</color>
+    <color name="dashboard_txt_color">#003A6C</color>
 </resources>

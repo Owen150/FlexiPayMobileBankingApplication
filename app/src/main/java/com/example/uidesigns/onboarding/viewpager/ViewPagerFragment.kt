@@ -43,8 +43,6 @@ class ViewPagerFragment : Fragment() {
         binding.viewPager.adapter = adapter
     }
 
-
-
     fun navigateToOnboarding(){
         findNavController().navigate(R.id.action_viewPagerFragment_to_mobileNumberFragment)
     }

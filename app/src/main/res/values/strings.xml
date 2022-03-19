@@ -5,7 +5,7 @@
     <string name="welcome_text">Welcome to FlexiPay</string>
     <string name="welcome_text_welcome_one">A Fast &amp; Efficient Service to Go Cashless!</string>
     <string name="welcome_text_welcome_two">A Fast &amp; Efficient Service to Go Cashless!</string>
-    <string name="welcome_text_welcome_three">Shop Without a Wallet...</string>
+    <string name="welcome_text_welcome_three">Shop Without a Wallet…</string>
     <string name="register_btn_text">REGISTER</string>
     <string name="login_text">Already have an account? Login</string>
     <string name="mobile_number">Using the Mobile Number provided, we will text you a code to verify your account.</string>
@@ -36,14 +36,25 @@
     <string name="cf_new_pin">New Pin</string>
     <string name="cf_confirm_pin">Confirm Pin</string>
     <string name="fp_wallet">Flexipay Wallet Account</string>
-    <string name="bal">Hide balance</string>
-    <string name="rd_points">Redeem points</string>
-    <string name="iv_friend">Invite a friend</string>
-    <string name="snd_mny">Send Money, Make Payments</string>
+    <string name="bal">+ Hide Balance</string>
+    <string name="rd_points">Redeem Points</string>
+    <string name="iv_friend">Invite a Friend</string>
+    <string name="snd_mny">Send Money, Make Payments, Invite a Friend &amp; Earn Reward points</string>
     <string name="buy_airtime">Buy Airtime</string>
     <string name="take_id_front">Take ID Front</string>
     <string name="takeid_back">TakeID Back</string>
     <string name="mini_statement">Ministatement</string>
+    <string name="send_money">Send Money</string>
+    <string name="snd">Send Money</string>
+    <string name="py_merch">Pay Merchants</string>
+    <string name="pay_merch">Pay Merchants</string>
+    <string name="my_acc">My Accounts</string>
+    <string name="fund_wallet">Fund Wallet</string>
+    <string name="pay_bills">Pay Bills</string>
+    <string name="sacco">Sacco</string>
+    <string name="my_cards">My Cards</string>
+    <string name="micro_loans">Micro Loans</string>
+    <string name="balance">Ugx 140,457.05</string>
 
 
 </resources>
