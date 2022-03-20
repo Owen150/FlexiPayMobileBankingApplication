@@ -23,9 +23,10 @@ class SplashFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         //Set the Duration for the splash screen
-        Handler().postDelayed({
+        lifecycleScope.launchWhenCreated {
+            delay(3000L)
             findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
-        },3000)
+        }
         //Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_splash, container, false)
     }

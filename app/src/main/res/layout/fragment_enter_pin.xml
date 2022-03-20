@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,29 +14,39 @@
         android:id="@+id/tv_personal_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/cf_pin"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
         android:fontFamily="@font/myfont"
+        android:text="@string/cf_pin"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="17sp"
-        android:textAlignment="center"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="5dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/id_type"
+            style="@style/TextInputLayoutStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/cf_code"
-            android:textColorHint="@color/white"
-            style="@style/TextInputLayoutStyle">
+            android:textColorHint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -48,12 +58,12 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/enter_id"
+            style="@style/TextInputLayoutStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/cf_new_pin"
-            android:textColorHint="@color/white"
             android:layout_marginTop="17dp"
-            style="@style/TextInputLayoutStyle">
+            android:hint="@string/cf_new_pin"
+            android:textColorHint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -65,12 +75,12 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/card_number"
+            style="@style/TextInputLayoutStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/cf_confirm_pin"
-            android:textColorHint="@color/white"
             android:layout_marginTop="17dp"
-            style="@style/TextInputLayoutStyle">
+            android:hint="@string/cf_confirm_pin"
+            android:textColorHint="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -80,24 +90,27 @@
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_register_one"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="280dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginEnd="45dp"
-            android:text="@string/continue_btn_text"
-            android:textColor="@color/white"
-            android:fontFamily="@font/myfont"
-            android:textSize="23sp"
-            app:cornerRadius="25dp"
-            android:background="@drawable/gradient"
-            app:backgroundTint="@null"
-            app:layout_constraintVertical_bias="0.52"
-            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
-
     </LinearLayout>
 
-</LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_register_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gradient"
+        android:fontFamily="@font/myfont"
+        android:text="@string/continue_btn_text"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:backgroundTint="@null"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
