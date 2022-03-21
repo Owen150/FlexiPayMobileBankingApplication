@@ -24,7 +24,7 @@ class SplashFragment : Fragment() {
     ): View? {
         //Set the Duration for the splash screen
         lifecycleScope.launchWhenCreated {
-            delay(3000L)
+            delay(2000L)
             findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
         }
         //Inflate the layout for this fragment
