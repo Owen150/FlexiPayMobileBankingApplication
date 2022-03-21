@@ -22,4 +22,13 @@
         <item name="hintEnabled">true</item>
         <item name="hintAnimationEnabled">true</item>
     </style>
+
+    <style name="TextInputLayoutStyle2" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="font">@font/myfont</item>
+        <item name="boxStrokeColor">#000</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="expandedHintEnabled">true</item>
+        <item name="hintEnabled">true</item>
+        <item name="hintAnimationEnabled">true</item>
+    </style>
 </resources>

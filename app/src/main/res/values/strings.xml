@@ -55,6 +55,9 @@
     <string name="my_cards">My Cards</string>
     <string name="micro_loans">Micro Loans</string>
     <string name="balance">Ugx 140,457.05</string>
+    <string name="flexi_wallet_0700_908_098">Flexi Wallet 0700 908 098</string>
+    <string name="buy_airtime_from">Buy Airtime from</string>
+    <string name="cards_airtime">Cards</string>
 
 
 </resources>

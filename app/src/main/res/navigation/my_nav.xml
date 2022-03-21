@@ -108,5 +108,14 @@
         android:id="@+id/signInDashboard"
         android:name="com.example.uidesigns.dashboards.SignInDashboard"
         android:label="fragment_dashboard_sign_in"
-        tools:layout="@layout/fragment_dashboard_sign_in" />
+        tools:layout="@layout/fragment_dashboard_sign_in" >
+        <action
+            android:id="@+id/action_signInDashboard_to_buyAirtimeFragment"
+            app:destination="@id/buyAirtimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyAirtimeFragment"
+        android:name="com.example.uidesigns.fragments.BuyAirtimeFragment"
+        android:label="fragment_buy_airtime"
+        tools:layout="@layout/fragment_buy_airtime" />
 </navigation>
