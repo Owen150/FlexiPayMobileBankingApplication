@@ -40,5 +40,8 @@ class SignInDashboard : Fragment() {
         binding.hidebalance.setOnClickListener {
             view.findNavController().navigate(R.id.action_signInDashboard_to_hiddenAmountFragment)
         }
+        binding.invite.setOnClickListener {
+            view.findNavController().navigate(R.id.action_signInDashboard_to_inviteFragment)
+        }
     }
 }
