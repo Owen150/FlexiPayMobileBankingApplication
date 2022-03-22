@@ -120,7 +120,7 @@
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/hide_balance"
+                    app:layout_constraintEnd_toStartOf="@+id/hidebalance"
                     app:layout_constraintHorizontal_bias="0.02"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -162,11 +162,11 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.95"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/hide_balance"
+                    app:layout_constraintTop_toBottomOf="@+id/hidebalance"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/hide_balance"
+                    android:id="@+id/hidebalance"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="150dp"
                     android:layout_height="40dp"

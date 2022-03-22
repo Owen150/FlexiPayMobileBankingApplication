@@ -1,15 +1,647 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dashboards.HiddenAmountFragment">
+    android:background="#e4e4e4"
+    tools:context=".dashboards.HiddenAmountFragment"
+    tools:ignore="HardcodedText">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/scroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="138dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/flexipay_logo"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.050000012" />
+
+            <ImageView
+                android:id="@+id/img_notification"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_notifications"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/app_name"/>
+
+            <ImageView
+                android:id="@+id/acc_holder"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_account_holder_img"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@string/app_name"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/myfont"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.025"
+            android:text="Good Afternoon, Wilfred N"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="12dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.29000002">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_wallet_acc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/myfont"
+                    android:text="@string/fp_wallet"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/showbalance"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.19" />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/myfont"
+                    android:text="@string/hidden"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ministatement"
+                    app:layout_constraintHorizontal_bias="0.18"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_wallet_acc"
+                    app:layout_constraintVertical_bias="0.65" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ministatement"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/myfont"
+                    android:text="@string/mini_statement"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dashboard_txt_color"
+                    android:textSize="13sp"
+                    app:cornerRadius="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/showbalance"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/showbalance"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/myfont"
+                    android:text="@string/bal_hidden"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dashboard_txt_color"
+                    android:textSize="13sp"
+                    app:cornerRadius="5dp"
+                    app:layout_constraintBottom_toTopOf="@+id/ministatement"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintStart_toEndOf="@+id/tv_wallet_acc"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="12dp"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_send"
+                    android:layout_width="176dp"
+                    android:layout_height="53dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/myfont"
+                    android:text="@string/snd_mny"
+                    android:textColor="@color/dashboard_txt_color"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/invite"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.13999999" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PTS 10,000"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/myfont"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/redeem"
+                    app:layout_constraintHorizontal_bias="0.38"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_send"
+                    app:layout_constraintVertical_bias="0.13999999" />
+
+                <ImageView
+                    android:id="@+id/img_gift"
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:background="@drawable/gift"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_send"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.07999998" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/redeem"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/myfont"
+                    android:text="@string/rd_points"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dashboard_txt_color"
+                    android:textSize="13sp"
+                    app:cornerRadius="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/invite"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/invite"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/myfont"
+                    android:text="@string/iv_friend"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dashboard_txt_color"
+                    android:textSize="13sp"
+                    app:cornerRadius="5dp"
+                    app:layout_constraintBottom_toTopOf="@+id/redeem"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layoutAirtime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/white_rectangle_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintDimensionRatio="H, 1:1"
+                app:layout_constraintEnd_toStartOf="@+id/layoutSendMoney"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/layoutMyAccounts">
+
+                <ImageView
+                    android:id="@+id/buy_airtime"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="6dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/wallet" />
+
+                <TextView
+                    android:id="@+id/tv_buy_airtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:gravity="center"
+                    android:text="@string/buy_airtime"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSendMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/white_rectangle_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@id/layoutFundWallet"
+                app:layout_constraintDimensionRatio="H, 1:1"
+                app:layout_constraintEnd_toStartOf="@+id/layoutPayMerchants"
+                app:layout_constraintLeft_toRightOf="@+id/layoutAirtime"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/iv_send_money"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="6dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/send_money" />
+
+                <TextView
+                    android:id="@+id/tv_send_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:gravity="center"
+                    android:text="@string/send_money"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPayMerchants"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/white_rectangle_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintDimensionRatio="H, 1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/layoutSendMoney"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/layoutPayBills"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/iv_pay_merchants"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="6dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/wallet" />
+
+                <TextView
+                    android:id="@+id/tv_pay_merchants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:gravity="center"
+                    android:text="@string/pay_merch"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMyAccounts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/white_rectangle_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintDimensionRatio="H, 1:1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/layoutFundWallet"
+                app:layout_constraintTop_toBottomOf="@id/layoutAirtime"
+                app:layout_constraintBottom_toTopOf="@id/layoutSacco">
+
+                <ImageView
+                    android:id="@+id/my_accounts"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="6dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/tv_my_accounts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:gravity="center"
+                    android:text="@string/my_acc"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutFundWallet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/white_rectangle_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintDimensionRatio="H, 1:1"
+                app:layout_constraintEnd_toStartOf="@id/layoutPayBills"
+                app:layout_constraintLeft_toRightOf="@+id/layoutMyAccounts"
+                app:layout_constraintTop_toBottomOf="@id/layoutSendMoney"
+                app:layout_constraintBottom_toTopOf="@id/layoutMyCards">
+
+                <ImageView
+                    android:id="@+id/iv_fund_wallet"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="6dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/wallet" />
+
+                <TextView
+                    android:id="@+id/tv_fund_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:gravity="center"
+                    android:text="@string/fund_wallet"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPayBills"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/white_rectangle_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintDimensionRatio="H, 1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/layoutFundWallet"
+                app:layout_constraintTop_toBottomOf="@id/layoutPayMerchants"
+                app:layout_constraintBottom_toTopOf="@id/layoutMicroLoans"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/iv_pay_bills"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="6dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/pay_bills" />
+
+                <TextView
+                    android:id="@+id/tv_pay_bills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:gravity="center"
+                    android:text="@string/pay_bills"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSacco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/white_rectangle_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintDimensionRatio="H, 1:1"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/layoutMyCards"
+                app:layout_constraintTop_toBottomOf="@id/layoutMyAccounts"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageView
+                    android:id="@+id/my_sacco"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="6dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/sacco" />
+
+                <TextView
+                    android:id="@+id/tv_my_sacco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:gravity="center"
+                    android:text="@string/sacco"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMyCards"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/white_rectangle_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="H, 1:1"
+                app:layout_constraintEnd_toStartOf="@id/layoutMicroLoans"
+                app:layout_constraintLeft_toRightOf="@+id/layoutSacco"
+                app:layout_constraintTop_toBottomOf="@id/layoutFundWallet">
+
+                <ImageView
+                    android:id="@+id/iv_my_cards"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="6dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/card" />
+
+                <TextView
+                    android:id="@+id/tv_my_cards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:gravity="center"
+                    android:text="@string/my_cards"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutMicroLoans"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/white_rectangle_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintDimensionRatio="H, 1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/layoutMyCards"
+                app:layout_constraintTop_toBottomOf="@id/layoutPayBills"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/iv_micro_loans"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="6dp"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp"
+                    android:src="@drawable/person" />
+
+                <TextView
+                    android:id="@+id/tv_micro_loans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:gravity="center"
+                    android:text="@string/micro_loans"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

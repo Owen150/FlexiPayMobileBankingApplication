@@ -37,6 +37,8 @@
     <string name="cf_confirm_pin">Confirm Pin</string>
     <string name="fp_wallet">Flexipay Wallet Account</string>
     <string name="bal">+ Hide Balance</string>
+    <string name="bal_hidden">+Show Balance</string>
+
     <string name="rd_points">Redeem Points</string>
     <string name="iv_friend">Invite a Friend</string>
     <string name="snd_mny">Send Money, Make Payments, Invite a Friend &amp; Earn Reward points</string>
@@ -82,6 +84,7 @@
     <string name="startimes">Startimes</string>
     <string name="umeme_yaka">Umeme Yaka</string>
     <string name="mtn_airtime">MTN Airtime</string>
+    <string name="hidden">Ugx *******</string>
 
 
 </resources>

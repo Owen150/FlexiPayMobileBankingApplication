@@ -115,6 +115,9 @@
         <action
             android:id="@+id/action_signInDashboard_to_ministatementFragment"
             app:destination="@id/ministatementFragment" />
+        <action
+            android:id="@+id/action_signInDashboard_to_hiddenAmountFragment"
+            app:destination="@id/hiddenAmountFragment" />
     </fragment>
     <fragment
         android:id="@+id/buyAirtimeFragment"
@@ -126,4 +129,19 @@
         android:name="com.example.uidesigns.fragments.MinistatementFragment"
         android:label="fragment_ministatement"
         tools:layout="@layout/fragment_ministatement" />
+    <fragment
+        android:id="@+id/hiddenAmountFragment"
+        android:name="com.example.uidesigns.dashboards.HiddenAmountFragment"
+        android:label="fragment_hidden_amount"
+        tools:layout="@layout/fragment_hidden_amount" >
+        <action
+            android:id="@+id/action_hiddenAmountFragment_to_signInDashboard"
+            app:destination="@id/signInDashboard" />
+        <action
+            android:id="@+id/action_hiddenAmountFragment_to_ministatementFragment"
+            app:destination="@id/ministatementFragment" />
+        <action
+            android:id="@+id/action_hiddenAmountFragment_to_buyAirtimeFragment"
+            app:destination="@id/buyAirtimeFragment" />
+    </fragment>
 </navigation>
