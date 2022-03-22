@@ -118,6 +118,9 @@
         <action
             android:id="@+id/action_signInDashboard_to_hiddenAmountFragment"
             app:destination="@id/hiddenAmountFragment" />
+        <action
+            android:id="@+id/action_signInDashboard_to_inviteFragment"
+            app:destination="@id/inviteFragment" />
     </fragment>
     <fragment
         android:id="@+id/buyAirtimeFragment"
@@ -143,5 +146,20 @@
         <action
             android:id="@+id/action_hiddenAmountFragment_to_buyAirtimeFragment"
             app:destination="@id/buyAirtimeFragment" />
+        <action
+            android:id="@+id/action_hiddenAmountFragment_to_inviteFragment"
+            app:destination="@id/inviteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inviteFragment"
+        android:name="com.example.uidesigns.fragments.InviteFragment"
+        android:label="fragment_invite"
+        tools:layout="@layout/fragment_invite" >
+        <action
+            android:id="@+id/action_inviteFragment_to_signInDashboard"
+            app:destination="@id/signInDashboard" />
+        <action
+            android:id="@+id/action_inviteFragment_to_ministatementFragment"
+            app:destination="@id/ministatementFragment" />
     </fragment>
 </navigation>
