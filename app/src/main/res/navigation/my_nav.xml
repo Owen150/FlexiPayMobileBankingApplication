@@ -112,10 +112,18 @@
         <action
             android:id="@+id/action_signInDashboard_to_buyAirtimeFragment"
             app:destination="@id/buyAirtimeFragment" />
+        <action
+            android:id="@+id/action_signInDashboard_to_ministatementFragment"
+            app:destination="@id/ministatementFragment" />
     </fragment>
     <fragment
         android:id="@+id/buyAirtimeFragment"
         android:name="com.example.uidesigns.fragments.BuyAirtimeFragment"
         android:label="fragment_buy_airtime"
         tools:layout="@layout/fragment_buy_airtime" />
+    <fragment
+        android:id="@+id/ministatementFragment"
+        android:name="com.example.uidesigns.fragments.MinistatementFragment"
+        android:label="fragment_ministatement"
+        tools:layout="@layout/fragment_ministatement" />
 </navigation>

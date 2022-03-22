@@ -34,5 +34,8 @@ class SignInDashboard : Fragment() {
         binding.layoutAirtime.setOnClickListener {
             view.findNavController().navigate(R.id.action_signInDashboard_to_buyAirtimeFragment)
         }
+        binding.ministatement.setOnClickListener{
+            view.findNavController().navigate(R.id.action_signInDashboard_to_ministatementFragment)
+        }
     }
 }
