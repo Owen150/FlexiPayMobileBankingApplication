@@ -33,7 +33,7 @@ class InviteFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.ministatement.setOnClickListener{
-            view.findNavController().navigate(R.id.action_signInDashboard_to_ministatementFragment)
+            view.findNavController().navigate(R.id.action_inviteFragment_to_ministatementFragment)
         }
     }
 }

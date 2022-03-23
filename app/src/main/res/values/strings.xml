@@ -85,6 +85,13 @@
     <string name="umeme_yaka">Umeme Yaka</string>
     <string name="mtn_airtime">MTN Airtime</string>
     <string name="hidden">Ugx *******</string>
+    <string name="invited_pp">People you invited</string>
+    <string name="top_percentage">This puts you in the top 75%</string>
+    <string name="view_tp">View transaction points</string>
+    <string name="trans_summary">Transactions Summary</string>
+    <string name="money">Money you could earn</string>
+    <string name="snd_pts">Send Points to Beneficiary</string>
+    <string name="others">Sign up your other 403 contacts</string>
 
 
 </resources>
