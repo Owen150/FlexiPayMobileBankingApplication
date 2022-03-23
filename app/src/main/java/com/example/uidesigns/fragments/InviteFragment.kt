@@ -34,6 +34,7 @@ class InviteFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.ministatement.setOnClickListener{
             view.findNavController().navigate(R.id.action_inviteFragment_to_ministatementFragment)
+            //Binding
         }
     }
 }
