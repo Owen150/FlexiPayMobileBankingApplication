@@ -138,6 +138,7 @@
         android:fontFamily="@font/myfont"
         android:text="@string/personal_info_create"
         android:textSize="19sp"
+        android:textColor="@color/white"
         app:backgroundTint="@null"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"

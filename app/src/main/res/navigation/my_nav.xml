@@ -170,5 +170,9 @@
         android:id="@+id/confirmAirtimeFragment"
         android:name="com.example.uidesigns.fragments.ConfirmAirtimeFragment"
         android:label="fragment_confirm_airtime"
-        tools:layout="@layout/fragment_confirm_airtime" />
+        tools:layout="@layout/fragment_confirm_airtime" >
+        <action
+            android:id="@+id/action_confirmAirtimeFragment_to_buyAirtimeFragment"
+            app:destination="@id/buyAirtimeFragment" />
+    </fragment>
 </navigation>
