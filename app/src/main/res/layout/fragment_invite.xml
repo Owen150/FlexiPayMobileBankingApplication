@@ -138,7 +138,7 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/ministatement"
-                    app:layout_constraintHorizontal_bias="0.18"
+                    app:layout_constraintHorizontal_bias="0.12"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_wallet_acc"
                     app:layout_constraintVertical_bias="0.65" />
@@ -313,13 +313,13 @@
                 android:id="@+id/ll_invite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:padding="15dp"
                 android:orientation="vertical"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_register_one"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cv_moreno"
@@ -336,18 +336,18 @@
                             android:id="@+id/iv_invited"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/invited_second"
                             android:layout_marginStart="10dp"
+                            android:background="@drawable/invited_second"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"/>
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
                             android:id="@+id/tv_invited"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/myfont"
                             android:text="@string/invited_pp"
                             android:textColor="@color/black"
@@ -363,8 +363,8 @@
                             android:id="@+id/stop"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/myfont"
                             android:text="@string/top_percentage"
                             android:textColor="@color/black"
@@ -381,8 +381,8 @@
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cv_startimes"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
                     android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
                     app:cardCornerRadius="10dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -394,18 +394,18 @@
                             android:id="@+id/iv_transaction_points"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/transaction_points"
                             android:layout_marginStart="10dp"
+                            android:background="@drawable/transaction_points"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"/>
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
                             android:id="@+id/tv_transaction_points"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/myfont"
                             android:text="@string/view_tp"
                             android:textColor="@color/black"
@@ -421,8 +421,8 @@
                             android:id="@+id/summary"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/myfont"
                             android:text="@string/trans_summary"
                             android:textColor="@color/black"
@@ -439,8 +439,8 @@
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cv_umeme"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
                     android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
                     app:cardCornerRadius="10dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -452,18 +452,18 @@
                             android:id="@+id/iv_transfer_points"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/transaction_points"
                             android:layout_marginStart="10dp"
+                            android:background="@drawable/transaction_points"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"/>
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
                             android:id="@+id/tv_transfer_points"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/myfont"
                             android:text="Transfer points"
                             android:textColor="@color/black"
@@ -479,8 +479,8 @@
                             android:id="@+id/snd_points"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/myfont"
                             android:text="@string/snd_pts"
                             android:textColor="@color/black"
@@ -497,8 +497,8 @@
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cv_mtn"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="20dp"
                     android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
                     app:cardCornerRadius="10dp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -510,18 +510,18 @@
                             android:id="@+id/iv_could_earn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/could_earn"
                             android:layout_marginStart="10dp"
+                            android:background="@drawable/could_earn"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"/>
+                            app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
                             android:id="@+id/tv_could_earn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
                             android:fontFamily="@font/myfont"
                             android:text="@string/money"
                             android:textColor="@color/black"
@@ -537,8 +537,8 @@
                             android:id="@+id/sign_up"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
                             android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="@font/myfont"
                             android:text="@string/others"
                             android:textColor="@color/black"
@@ -553,9 +553,32 @@
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_register_one"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/gradient"
+                android:fontFamily="@font/myfont"
+                android:text="@string/invite_frnd"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@null"
+                app:layout_constraintTop_toBottomOf="@+id/ll_invite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

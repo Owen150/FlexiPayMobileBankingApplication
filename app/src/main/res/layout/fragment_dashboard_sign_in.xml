@@ -130,7 +130,6 @@
                     android:id="@+id/tv_balance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
                     android:fontFamily="@font/myfont"
                     android:text="@string/balance"
                     android:textColor="@color/black"
@@ -138,7 +137,7 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/ministatement"
-                    app:layout_constraintHorizontal_bias="0.18"
+                    app:layout_constraintHorizontal_bias="0.22"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_wallet_acc"
                     app:layout_constraintVertical_bias="0.65" />

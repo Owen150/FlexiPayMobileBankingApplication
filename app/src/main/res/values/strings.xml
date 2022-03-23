@@ -92,6 +92,7 @@
     <string name="money">Money you could earn</string>
     <string name="snd_pts">Send Points to Beneficiary</string>
     <string name="others">Sign up your other 403 contacts</string>
+    <string name="invite_frnd"><![CDATA[INVITE FRIEND & EARN MONEY]]></string>
 
 
 </resources>
