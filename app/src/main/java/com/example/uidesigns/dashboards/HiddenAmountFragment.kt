@@ -42,7 +42,7 @@ class HiddenAmountFragment : Fragment() {
             view.findNavController().navigate(R.id.action_hiddenAmountFragment_to_buyAirtimeFragment)
         }
         binding.invite.setOnClickListener {
-            view.findNavController().navigate(R.id.action_signInDashboard_to_inviteFragment)
+            view.findNavController().navigate(R.id.action_hiddenAmountFragment_to_inviteFragment)
         }
     }
 }
