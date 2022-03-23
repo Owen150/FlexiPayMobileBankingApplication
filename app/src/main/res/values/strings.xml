@@ -93,6 +93,18 @@
     <string name="snd_pts">Send Points to Beneficiary</string>
     <string name="others">Sign up your other 403 contacts</string>
     <string name="invite_frnd"><![CDATA[INVITE FRIEND & EARN MONEY]]></string>
+    <string name="flexipay">Flexipay</string>
+    <string name="sacco2">Sacco</string>
+    <string name="buy_airtime_for">Buy Airtime For:</string>
+    <string name="mompati_mokoka">MOMPATI MOKOKA</string>
+    <string name="mobile_no_confirm">Mobile No:</string>
+    <string name="_0722098098">0722098098</string>
+    <string name="amount_confirm">Amount:</string>
+    <string name="ugx_100_00">UGX. 100.00</string>
+    <string name="transaction_cost">Transaction Cost:</string>
+    <string name="ugx_0_00">UGX. 0.00</string>
+    <string name="cancel_airtime">CANCEL</string>
+    <string name="buy_airtime_confirmed">BUY</string>
 
 
 </resources>

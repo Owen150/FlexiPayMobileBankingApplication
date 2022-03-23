@@ -18,27 +18,28 @@
         app:srcCompat="@drawable/background_airtime" />
 
     <LinearLayout
+        android:id="@+id/ll_airtime_buy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="5dp"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnpopup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16000003">
+        app:layout_constraintVertical_bias="1.0">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/alt_mobile_number"
-            app:boxStrokeColor="#000000"
             style="@style/TextInputLayoutStyle2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/cf_alternative_phone"
-            android:textColorHint="@color/black">
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="#000000">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -86,17 +87,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textSize="18sp"
             android:fontFamily="@font/myfont"
+            android:text="@string/buy_airtime_from"
             android:textColor="@color/dashboard_txt_color"
-            android:text="@string/buy_airtime_from"/>
+            android:textSize="18sp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ll_airtime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_gravity="center"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -108,11 +109,11 @@
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/layoutAirtime2"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintDimensionRatio="H, 1:1">
+                app:layout_constraintDimensionRatio="H, 1:1"
+                app:layout_constraintEnd_toStartOf="@+id/layoutAirtime2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
                     android:id="@+id/buy_airtime1"
@@ -128,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/myfont"
                     android:gravity="center"
-                    android:text="Flexipay"
+                    android:text="@string/flexipay"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -143,11 +144,11 @@
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/layoutAirtime1"
+                app:layout_constraintDimensionRatio="H, 1:1"
                 app:layout_constraintEnd_toStartOf="@+id/layoutAirtime3"
-                app:layout_constraintDimensionRatio="H, 1:1">
+                app:layout_constraintStart_toEndOf="@+id/layoutAirtime1"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
                     android:id="@+id/buy_airtime2"
@@ -163,7 +164,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/myfont"
                     android:gravity="center"
-                    android:text="Sacco"
+                    android:text="@string/sacco2"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -178,11 +179,11 @@
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="H, 1:1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/layoutAirtime2"
-                app:layout_constraintDimensionRatio="H, 1:1">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
                     android:id="@+id/buy_airtime3"
@@ -226,12 +227,12 @@
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_register_one"
+        android:id="@+id/btnpopup"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginTop="65dp"
         android:layout_marginStart="45dp"
         android:layout_marginEnd="45dp"
-        android:layout_marginBottom="10dp"
         android:background="@drawable/gradient"
         android:fontFamily="@font/myfont"
         android:text="@string/continue_btn_text"
@@ -241,8 +242,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.97"
+        app:layout_constraintTop_toBottomOf="@id/ll_airtime_buy"
+        app:layout_constraintVertical_bias="0.9"
         tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
 
