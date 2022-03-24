@@ -105,6 +105,14 @@
     <string name="ugx_0_00">UGX. 0.00</string>
     <string name="cancel_airtime">CANCEL</string>
     <string name="buy_airtime_confirmed">BUY</string>
+    <string name="thank_you">THANK YOU!</string>
+    <string name="date_02_jun_2020">Date: 02 Jun 2020</string>
+    <string name="you_have_successfully_bought_mtn_airtime_of_ugx_60_000_00_for_wilfred_cuthbert_256790456789">You have successfully bought MTN Airtime of UGX 60,000.00 For Wilfred Cuthbert 256790456789.</string>
+    <string name="done">DONE</string>
+    <string name="time_17_25">Time: 17:25</string>
+    <string name="ref_id_3456789">REF ID: 3456789</string>
+    <string name="transaction_cost_ugx_900_00">Transaction Cost: UGX 900.00</string>
+    <string name="your_request">Your request has been received. You will receive an SMS confirmation shortly.</string>
 
 
 </resources>

@@ -7,17 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.example.uidesigns.R
-import com.example.uidesigns.databinding.FragmentConfirmAirtimeBinding
+import com.example.uidesigns.databinding.FragmentBuyAirtimeReceiptBinding
 import com.example.uidesigns.databinding.FragmentInviteBinding
 
-class ConfirmAirtimeFragment : Fragment() {
-
-    private lateinit var _binding : FragmentConfirmAirtimeBinding
+class BuyAirtimeReceiptFragment : Fragment() {
+    private lateinit var _binding : FragmentBuyAirtimeReceiptBinding
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -25,18 +23,15 @@ class ConfirmAirtimeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentConfirmAirtimeBinding.inflate(inflater, container, false)
+        _binding = FragmentBuyAirtimeReceiptBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btncancel.setOnClickListener {
-            view.findNavController().navigate(R.id.action_confirmAirtimeFragment_to_buyAirtimeFragment)
-        }
-        binding.btnbuy.setOnClickListener {
-            view.findNavController().navigate(R.id.action_confirmAirtimeFragment_to_buyAirtimeReceiptFragment)
+        binding.btndone.setOnClickListener {
+            view.findNavController().navigate(R.id.action_buyAirtimeReceiptFragment_to_signInDashboard)
         }
     }
 }
