@@ -36,5 +36,8 @@ class InviteShowBalanceFragment : Fragment() {
         binding.ministatement.setOnClickListener {
             view.findNavController().navigate(R.id.action_inviteShowBalanceFragment_to_ministatementFragment)
         }
+        binding.hidebalance.setOnClickListener {
+            view.findNavController().navigate(R.id.action_inviteShowBalanceFragment_to_inviteFragment)
+        }
     }
 }

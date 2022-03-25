@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.register.DocumentPhotoFragment"
+    tools:context=".auth.register.EnterPinFragment"
     android:background="#001D4D"
     android:scaleType="fitXY"
     android:orientation="vertical"
@@ -93,7 +93,7 @@
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_register_one"
+        android:id="@+id/btnregisterone"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="45dp"

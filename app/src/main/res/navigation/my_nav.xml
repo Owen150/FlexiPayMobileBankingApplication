@@ -40,9 +40,6 @@
         <action
             android:id="@+id/action_mobileNumberFragment_to_personalInfoFragment"
             app:destination="@id/personalInfoFragment" />
-        <action
-            android:id="@+id/action_mobileNumberFragment_to_signInDashboard"
-            app:destination="@id/signInDashboard" />
     </fragment>
     <fragment
         android:id="@+id/personalInfoFragment"
@@ -95,11 +92,8 @@
         android:label="fragment_enter_pin"
         tools:layout="@layout/fragment_enter_pin" >
         <action
-            android:id="@+id/action_enterPinFragment_to_signInDashboard"
-            app:destination="@id/signInDashboard" />
-        <action
-            android:id="@+id/action_enterPinFragment_to_mobileNumberFragment"
-            app:destination="@id/mobileNumberFragment" />
+            android:id="@+id/action_enterPinFragment_to_mobileNumberSignInFragment"
+            app:destination="@id/mobileNumberSignInFragment" />
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
@@ -207,5 +201,14 @@
         <action
             android:id="@+id/action_inviteShowBalanceFragment_to_ministatementFragment"
             app:destination="@id/ministatementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mobileNumberSignInFragment"
+        android:name="com.example.uidesigns.auth.signin.MobileNumberSignInFragment"
+        android:label="fragment_mobile_number_sign_in"
+        tools:layout="@layout/fragment_mobile_number_sign_in" >
+        <action
+            android:id="@+id/action_mobileNumberSignInFragment_to_signInDashboard"
+            app:destination="@id/signInDashboard" />
     </fragment>
 </navigation>

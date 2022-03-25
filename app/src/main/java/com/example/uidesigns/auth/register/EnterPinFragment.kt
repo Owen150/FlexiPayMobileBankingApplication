@@ -30,8 +30,8 @@ class EnterPinFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.btnRegisterOne.setOnClickListener {
-            view.findNavController().navigate(R.id.action_enterPinFragment_to_signInDashboard)
+        binding.btnregisterone.setOnClickListener {
+            view.findNavController().navigate(R.id.action_enterPinFragment_to_mobileNumberSignInFragment)
         }
     }
 }

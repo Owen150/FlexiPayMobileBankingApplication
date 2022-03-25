@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.register.MobileNumberFragment">
+    tools:context=".auth.signin.MobileNumberSignInFragment">
 
 
     <ImageView
@@ -113,7 +113,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_register_one"
+        android:id="@+id/btndash"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="65dp"
