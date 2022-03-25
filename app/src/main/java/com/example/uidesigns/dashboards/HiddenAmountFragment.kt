@@ -35,14 +35,21 @@ class HiddenAmountFragment : Fragment() {
         binding.showbalance.setOnClickListener {
             view.findNavController().navigate(R.id.action_hiddenAmountFragment_to_signInDashboard)
         }
+        //Action to ministatement fragment
         binding.ministatement.setOnClickListener {
             view.findNavController().navigate(R.id.action_hiddenAmountFragment_to_ministatementFragment)
         }
+        //Action to buy airtime fragment
         binding.layoutAirtime.setOnClickListener {
             view.findNavController().navigate(R.id.action_hiddenAmountFragment_to_buyAirtimeFragment)
         }
+        //Action to invite friend fragment
         binding.invite.setOnClickListener {
             view.findNavController().navigate(R.id.action_hiddenAmountFragment_to_inviteFragment)
+        }
+        //Action to my accounts fragment
+        binding.layoutMyAccounts.setOnClickListener {
+            view.findNavController().navigate(R.id.action_hiddenAmountFragment_to_myAccountsFragment)
         }
     }
 }

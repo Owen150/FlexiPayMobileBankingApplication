@@ -121,6 +121,9 @@
         <action
             android:id="@+id/action_signInDashboard_to_inviteFragment"
             app:destination="@id/inviteFragment" />
+        <action
+            android:id="@+id/action_signInDashboard_to_myAccountsFragment"
+            app:destination="@id/myAccountsFragment" />
     </fragment>
     <fragment
         android:id="@+id/buyAirtimeFragment"
@@ -153,6 +156,9 @@
         <action
             android:id="@+id/action_hiddenAmountFragment_to_inviteFragment"
             app:destination="@id/inviteFragment" />
+        <action
+            android:id="@+id/action_hiddenAmountFragment_to_myAccountsFragment"
+            app:destination="@id/myAccountsFragment" />
     </fragment>
     <fragment
         android:id="@+id/inviteFragment"
@@ -211,4 +217,9 @@
             android:id="@+id/action_mobileNumberSignInFragment_to_signInDashboard"
             app:destination="@id/signInDashboard" />
     </fragment>
+    <fragment
+        android:id="@+id/myAccountsFragment"
+        android:name="com.example.uidesigns.fragments.MyAccountsFragment"
+        android:label="fragment_my_accounts"
+        tools:layout="@layout/fragment_my_accounts" />
 </navigation>

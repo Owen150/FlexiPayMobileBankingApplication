@@ -31,17 +31,25 @@ class SignInDashboard : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        //Action to buy airtime fragment
         binding.layoutAirtime.setOnClickListener {
             view.findNavController().navigate(R.id.action_signInDashboard_to_buyAirtimeFragment)
         }
+        //Action to the ministatement fragment
         binding.ministatement.setOnClickListener{
             view.findNavController().navigate(R.id.action_signInDashboard_to_ministatementFragment)
         }
+        //Hide account balance
         binding.hidebalance.setOnClickListener {
             view.findNavController().navigate(R.id.action_signInDashboard_to_hiddenAmountFragment)
         }
+        //Action to invite friend fragment
         binding.invite.setOnClickListener {
             view.findNavController().navigate(R.id.action_signInDashboard_to_inviteFragment)
+        }
+        //Action to my accounts fragment
+        binding.layoutMyAccounts.setOnClickListener {
+            view.findNavController().navigate(R.id.action_signInDashboard_to_myAccountsFragment)
         }
     }
 }
