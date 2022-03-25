@@ -117,6 +117,10 @@
     <string name="mini_statement_two">Mini Statement</string>
     <string name="full_statement">Full Statement</string>
     <string name="acc_no">Acc 544667894567</string>
+    <string name="private_banking">Private Banking Current Account</string>
+    <string name="mini">Ministatement</string>
+    <string name="smart_direct">Smart Direct Account</string>
+    <string name="exim_bank">Exim Bank Uganda | Ugx currency</string>
 
 
 </resources>

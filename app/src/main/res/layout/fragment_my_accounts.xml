@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e4e4e4"
+    android:background="@drawable/background_airtime"
     tools:context=".fragments.InviteFragment"
     tools:ignore="HardcodedText">
 
@@ -66,7 +66,7 @@
                     android:text="@string/fp_wallet"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/showbalance"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -74,18 +74,29 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.22000003" />
 
+                <View
+                    android:id="@+id/horizontal_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_wallet_acc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_balance"/>
+
                 <TextView
                     android:id="@+id/tv_balance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
                     android:fontFamily="@font/myfont"
                     android:text="@string/mini_statement_two"
                     android:textColor="@color/dashboard_txt_color"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/ministatement"
-                    app:layout_constraintHorizontal_bias="0.12"
+                    app:layout_constraintHorizontal_bias="0.08"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/tv_wallet_acc"
                     app:layout_constraintVertical_bias="0.65" />
@@ -103,7 +114,7 @@
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintHorizontal_bias="0.98"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/showbalance"
                     tools:ignore="TouchTargetSizeCheck" />
@@ -141,28 +152,199 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
+            android:id="@+id/ll_invite"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
-            <LinearLayout
-                android:id="@+id/ll_invite"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_private"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="15dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0">
+                android:layout_height="120dp"
+                app:cardCornerRadius="10dp">
 
-            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_private"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/tv_private"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/myfont"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="@string/private_banking"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stanbic Bank | Ugx currency"
+                        android:textColor="@color/dashboard_txt_color"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/acc_no"
+                        android:layout_marginStart="85dp"
+                        android:textColor="@color/dashboard_txt_color"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="60dp"
+                    android:padding="10dp">
+
+                    <View
+                        android:id="@+id/horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="70dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/minione"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mini_statement_two"
+                        android:textColor="@color/dashboard_txt_color"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/fullone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Full Statement"
+                        android:layout_marginStart="190dp"
+                        android:textColor="@color/dashboard_txt_color"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_smart"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_smart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_smart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/myfont"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="@string/smart_direct"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/exim_bank"
+                        android:textColor="@color/dashboard_txt_color"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/acc_no"
+                        android:layout_marginStart="55dp"
+                        android:textColor="@color/dashboard_txt_color"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="60dp"
+                    android:padding="10dp">
+
+                    <View
+                        android:id="@+id/horizontal_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/darker_gray"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="70dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/minitwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mini_statement_two"
+                        android:textColor="@color/dashboard_txt_color"
+                        android:textSize="13sp"/>
+
+                    <TextView
+                        android:id="@+id/fulltwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Full Statement"
+                        android:layout_marginStart="190dp"
+                        android:textColor="@color/dashboard_txt_color"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
 
     </ScrollView>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
