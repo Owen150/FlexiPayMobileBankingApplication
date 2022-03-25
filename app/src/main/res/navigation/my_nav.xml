@@ -40,6 +40,9 @@
         <action
             android:id="@+id/action_mobileNumberFragment_to_personalInfoFragment"
             app:destination="@id/personalInfoFragment" />
+        <action
+            android:id="@+id/action_mobileNumberFragment_to_signInDashboard"
+            app:destination="@id/signInDashboard" />
     </fragment>
     <fragment
         android:id="@+id/personalInfoFragment"
@@ -94,6 +97,9 @@
         <action
             android:id="@+id/action_enterPinFragment_to_signInDashboard"
             app:destination="@id/signInDashboard" />
+        <action
+            android:id="@+id/action_enterPinFragment_to_mobileNumberFragment"
+            app:destination="@id/mobileNumberFragment" />
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
@@ -165,6 +171,9 @@
         <action
             android:id="@+id/action_inviteFragment_to_ministatementFragment"
             app:destination="@id/ministatementFragment" />
+        <action
+            android:id="@+id/action_inviteFragment_to_inviteShowBalanceFragment"
+            app:destination="@id/inviteShowBalanceFragment" />
     </fragment>
     <fragment
         android:id="@+id/confirmAirtimeFragment"
@@ -186,5 +195,17 @@
         <action
             android:id="@+id/action_buyAirtimeReceiptFragment_to_signInDashboard"
             app:destination="@id/signInDashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/inviteShowBalanceFragment"
+        android:name="com.example.uidesigns.fragments.InviteShowBalanceFragment"
+        android:label="fragment_invite_show_balance"
+        tools:layout="@layout/fragment_invite_show_balance" >
+        <action
+            android:id="@+id/action_inviteShowBalanceFragment_to_inviteFragment"
+            app:destination="@id/inviteFragment" />
+        <action
+            android:id="@+id/action_inviteShowBalanceFragment_to_ministatementFragment"
+            app:destination="@id/ministatementFragment" />
     </fragment>
 </navigation>

@@ -7,12 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.example.uidesigns.R
-import com.example.uidesigns.databinding.FragmentHiddenAmountBinding
 import com.example.uidesigns.databinding.FragmentInviteBinding
+import com.example.uidesigns.databinding.FragmentInviteShowBalanceBinding
 
-class InviteFragment : Fragment() {
 
-    private lateinit var _binding: FragmentInviteBinding
+class InviteShowBalanceFragment : Fragment() {
+
+    private lateinit var _binding : FragmentInviteShowBalanceBinding
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,19 +26,15 @@ class InviteFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentInviteBinding.inflate(inflater, container, false)
+        _binding = FragmentInviteShowBalanceBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.ministatement.setOnClickListener{
-            view.findNavController().navigate(R.id.action_inviteFragment_to_ministatementFragment)
-            //Binding
-        }
-        binding.showbalance.setOnClickListener {
-            view.findNavController().navigate(R.id.action_inviteFragment_to_inviteShowBalanceFragment)
+        binding.ministatement.setOnClickListener {
+            view.findNavController().navigate(R.id.action_inviteShowBalanceFragment_to_ministatementFragment)
         }
     }
 }
