@@ -306,7 +306,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <LinearLayout
                 android:id="@+id/layoutAirtime"
@@ -326,7 +327,7 @@
 
                 <ImageView
                     android:id="@+id/buy_airtime"
-                    android:layout_width="75dp"
+                    android:layout_width="85dp"
                     android:layout_height="75dp"
                     android:layout_margin="6dp"
                     android:contentDescription="@string/app_name"
@@ -363,7 +364,7 @@
 
                 <ImageView
                     android:id="@+id/iv_send_money"
-                    android:layout_width="75dp"
+                    android:layout_width="85dp"
                     android:layout_height="75dp"
                     android:layout_margin="6dp"
                     android:contentDescription="@string/app_name"
@@ -400,7 +401,7 @@
 
                 <ImageView
                     android:id="@+id/iv_pay_merchants"
-                    android:layout_width="75dp"
+                    android:layout_width="85dp"
                     android:layout_height="75dp"
                     android:layout_margin="6dp"
                     android:contentDescription="@string/app_name"
@@ -437,7 +438,7 @@
 
                 <ImageView
                     android:id="@+id/my_accounts"
-                    android:layout_width="75dp"
+                    android:layout_width="85dp"
                     android:layout_height="75dp"
                     android:layout_margin="6dp"
                     android:contentDescription="@string/app_name"
@@ -473,7 +474,7 @@
 
                 <ImageView
                     android:id="@+id/iv_fund_wallet"
-                    android:layout_width="75dp"
+                    android:layout_width="85dp"
                     android:layout_height="75dp"
                     android:layout_margin="6dp"
                     android:contentDescription="@string/app_name"
@@ -510,7 +511,7 @@
 
                 <ImageView
                     android:id="@+id/iv_pay_bills"
-                    android:layout_width="75dp"
+                    android:layout_width="85dp"
                     android:layout_height="75dp"
                     android:layout_margin="6dp"
                     android:contentDescription="@string/app_name"
@@ -547,7 +548,7 @@
 
                 <ImageView
                     android:id="@+id/my_sacco"
-                    android:layout_width="75dp"
+                    android:layout_width="85dp"
                     android:layout_height="75dp"
                     android:layout_margin="6dp"
                     android:contentDescription="@string/app_name"
@@ -583,7 +584,7 @@
 
                 <ImageView
                     android:id="@+id/iv_my_cards"
-                    android:layout_width="75dp"
+                    android:layout_width="85dp"
                     android:layout_height="75dp"
                     android:layout_margin="6dp"
                     android:contentDescription="@string/app_name"
@@ -620,7 +621,7 @@
 
                 <ImageView
                     android:id="@+id/iv_micro_loans"
-                    android:layout_width="75dp"
+                    android:layout_width="85dp"
                     android:layout_height="75dp"
                     android:layout_margin="6dp"
                     android:contentDescription="@string/app_name"

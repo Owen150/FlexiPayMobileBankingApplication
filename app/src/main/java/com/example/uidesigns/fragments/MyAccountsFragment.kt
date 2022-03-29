@@ -40,5 +40,14 @@ class MyAccountsFragment : Fragment() {
         binding.minitwo.setOnClickListener {
             view.findNavController().navigate(R.id.action_myAccountsFragment_to_ministatementFragment)
         }
+        binding.fullstatement.setOnClickListener {
+            view.findNavController().navigate(R.id.action_myAccountsFragment_to_fullStatementFragment)
+        }
+        binding.fullone.setOnClickListener {
+            view.findNavController().navigate(R.id.action_myAccountsFragment_to_fullStatementFragment)
+        }
+        binding.fulltwo.setOnClickListener {
+            view.findNavController().navigate(R.id.action_myAccountsFragment_to_fullStatementFragment)
+        }
     }
 }

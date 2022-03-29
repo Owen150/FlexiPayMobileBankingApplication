@@ -124,6 +124,11 @@
     <string name="enter_start_date">Enter Start date</string>
     <string name="enter_end">Enter end date</string>
     <string name="morgannajabulani_yahoo_com">morgannajabulani@yahoo.com</string>
+    <string name="umeme">UMEME</string>
+    <string name="paytv">PAYTV</string>
+    <string name="nwsc">NWSC</string>
+    <string name="nssf">NSSF</string>
+    <string name="kcc">KCC</string>
 
 
 </resources>
