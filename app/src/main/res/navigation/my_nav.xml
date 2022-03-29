@@ -225,5 +225,13 @@
         <action
             android:id="@+id/action_myAccountsFragment_to_ministatementFragment"
             app:destination="@id/ministatementFragment" />
+        <action
+            android:id="@+id/action_myAccountsFragment_to_fullStatementFragment"
+            app:destination="@id/fullStatementFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/fullStatementFragment"
+        android:name="com.example.uidesigns.fragments.FullStatementFragment"
+        android:label="fragment_full_statement"
+        tools:layout="@layout/fragment_full_statement" />
 </navigation>

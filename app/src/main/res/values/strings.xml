@@ -121,6 +121,9 @@
     <string name="mini">Ministatement</string>
     <string name="smart_direct">Smart Direct Account</string>
     <string name="exim_bank">Exim Bank Uganda | Ugx currency</string>
+    <string name="enter_start_date">Enter Start date</string>
+    <string name="enter_end">Enter end date</string>
+    <string name="morgannajabulani_yahoo_com">morgannajabulani@yahoo.com</string>
 
 
 </resources>

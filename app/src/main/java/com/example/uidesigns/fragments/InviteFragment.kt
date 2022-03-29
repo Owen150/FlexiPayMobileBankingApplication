@@ -7,13 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.example.uidesigns.R
-import com.example.uidesigns.databinding.FragmentHiddenAmountBinding
 import com.example.uidesigns.databinding.FragmentInviteBinding
 
 class InviteFragment : Fragment() {
 
-    private lateinit var _binding: FragmentInviteBinding
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentInviteBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +23,7 @@ class InviteFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentInviteBinding.inflate(inflater, container, false)
+        binding = FragmentInviteBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
     }
