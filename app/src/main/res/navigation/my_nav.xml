@@ -221,5 +221,9 @@
         android:id="@+id/myAccountsFragment"
         android:name="com.example.uidesigns.fragments.MyAccountsFragment"
         android:label="fragment_my_accounts"
-        tools:layout="@layout/fragment_my_accounts" />
+        tools:layout="@layout/fragment_my_accounts" >
+        <action
+            android:id="@+id/action_myAccountsFragment_to_ministatementFragment"
+            app:destination="@id/ministatementFragment" />
+    </fragment>
 </navigation>
