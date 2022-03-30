@@ -22,7 +22,7 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ll_two"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
