@@ -106,7 +106,7 @@
                 android:layout_margin="6dp"
                 android:contentDescription="@string/app_name"
                 android:padding="8dp"
-                android:src="@drawable/NWSC" />
+                android:src="@drawable/nwsctwo" />
 
             <TextView
                 android:id="@+id/tv_pay_merchants"
@@ -179,7 +179,7 @@
                 android:layout_margin="6dp"
                 android:contentDescription="@string/app_name"
                 android:padding="8dp"
-                android:src="@drawable/wallet" />
+                android:src="@drawable/uratwo" />
 
             <TextView
                 android:id="@+id/tv_fund_wallet"
@@ -187,7 +187,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/myfont"
                 android:gravity="center"
-                android:text="@string/fund_wallet"
+                android:text="@string/ura"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
@@ -216,7 +216,7 @@
                 android:layout_margin="6dp"
                 android:contentDescription="@string/app_name"
                 android:padding="8dp"
-                android:src="@drawable/KCC" />
+                android:src="@drawable/kcctwo" />
 
             <TextView
                 android:id="@+id/tv_pay_bills"
@@ -253,7 +253,7 @@
                 android:layout_margin="6dp"
                 android:contentDescription="@string/app_name"
                 android:padding="8dp"
-                android:src="@drawable/sacco" />
+                android:src="@drawable/unebtwo" />
 
             <TextView
                 android:id="@+id/tv_my_sacco"
@@ -261,7 +261,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/myfont"
                 android:gravity="center"
-                android:text="@string/sacco"
+                android:text="@string/uneb"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
@@ -289,7 +289,7 @@
                 android:layout_margin="6dp"
                 android:contentDescription="@string/app_name"
                 android:padding="8dp"
-                android:src="@drawable/card" />
+                android:src="@drawable/uedc" />
 
             <TextView
                 android:id="@+id/tv_my_cards"
@@ -297,7 +297,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/myfont"
                 android:gravity="center"
-                android:text="@string/my_cards"
+                android:text="@string/uedc"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 
@@ -326,7 +326,7 @@
                 android:layout_margin="6dp"
                 android:contentDescription="@string/app_name"
                 android:padding="8dp"
-                android:src="@drawable/person" />
+                android:src="@drawable/blbtwo" />
 
             <TextView
                 android:id="@+id/tv_micro_loans"
@@ -334,7 +334,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/myfont"
                 android:gravity="center"
-                android:text="@string/micro_loans"
+                android:text="@string/blb"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
 

@@ -124,6 +124,9 @@
         <action
             android:id="@+id/action_signInDashboard_to_myAccountsFragment"
             app:destination="@id/myAccountsFragment" />
+        <action
+            android:id="@+id/action_signInDashboard_to_payBillsFragment"
+            app:destination="@id/payBillsFragment" />
     </fragment>
     <fragment
         android:id="@+id/buyAirtimeFragment"
@@ -159,6 +162,9 @@
         <action
             android:id="@+id/action_hiddenAmountFragment_to_myAccountsFragment"
             app:destination="@id/myAccountsFragment" />
+        <action
+            android:id="@+id/action_hiddenAmountFragment_to_payBillsFragment"
+            app:destination="@id/payBillsFragment" />
     </fragment>
     <fragment
         android:id="@+id/inviteFragment"
@@ -234,4 +240,9 @@
         android:name="com.example.uidesigns.fragments.FullStatementFragment"
         android:label="fragment_full_statement"
         tools:layout="@layout/fragment_full_statement" />
+    <fragment
+        android:id="@+id/payBillsFragment"
+        android:name="com.example.uidesigns.fragments.PayBillsFragment"
+        android:label="fragment_pay_bills"
+        tools:layout="@layout/fragment_pay_bills" />
 </navigation>

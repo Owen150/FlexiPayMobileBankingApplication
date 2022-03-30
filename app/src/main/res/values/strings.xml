@@ -129,6 +129,10 @@
     <string name="nwsc">NWSC</string>
     <string name="nssf">NSSF</string>
     <string name="kcc">KCC</string>
+    <string name="ura">URA</string>
+    <string name="uneb">UNEB</string>
+    <string name="uedc">UEDC</string>
+    <string name="blb">BLB</string>
 
 
 </resources>

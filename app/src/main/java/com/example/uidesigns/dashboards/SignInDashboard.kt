@@ -51,5 +51,9 @@ class SignInDashboard : Fragment() {
         binding.layoutMyAccounts.setOnClickListener {
             view.findNavController().navigate(R.id.action_signInDashboard_to_myAccountsFragment)
         }
+        //Action to pay bills fragment
+        binding.layoutPayBills.setOnClickListener {
+            view.findNavController().navigate(R.id.action_signInDashboard_to_payBillsFragment)
+        }
     }
 }
