@@ -4,11 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.inflate
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.navigation.findNavController
-import com.example.uidesigns.R
 import com.example.uidesigns.databinding.FragmentOnboardingScreenOneBinding
 
 class OnboardingScreenOneFragment(val onclick : () -> Unit) : Fragment() {
@@ -24,11 +20,10 @@ class OnboardingScreenOneFragment(val onclick : () -> Unit) : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentOnboardingScreenOneBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
